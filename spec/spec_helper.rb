@@ -1,0 +1,1 @@
+require 'mars_mission'
