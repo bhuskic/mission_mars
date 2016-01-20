@@ -14,9 +14,9 @@ module MarsMission
 
     def turn(direction:)
       if direction.upcase == 'L'
-        self.direction = TO_LEFT[TO_LEFT.index(self.direction).next]
+        self.direction = TO_LEFT[TO_LEFT.index(self.direction).next % 4]
       else
-        self.direction = TO_RIGHT[TO_RIGHT.index(self.direction).next]
+        self.direction = TO_RIGHT[TO_RIGHT.index(self.direction).next % 4]
       end
     end
 
